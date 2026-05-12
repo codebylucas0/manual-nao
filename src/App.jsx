@@ -8,6 +8,7 @@ import { useState } from 'react'
 
 import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
+import Projeto from './pages/projeto'
 
 function App() {
 
@@ -32,6 +33,16 @@ function App() {
           path="/dashboard"
           element={
             <Dashboard
+              darkMode={darkMode}
+              setDarkMode={setDarkMode}
+            />
+          }
+        />
+
+        <Route
+          path="/projeto"
+          element={
+            <Projeto
               darkMode={darkMode}
               setDarkMode={setDarkMode}
             />

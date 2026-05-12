@@ -69,7 +69,10 @@ function Home({ darkMode, setDarkMode }) {
             Quero conhecê-lo!
           </button>
 
-          <button className="secondary">
+          <button
+            className="secondary"
+            onClick={() => navigate('/projeto')}
+          >
             Conhecer o projeto
           </button>
 

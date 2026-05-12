@@ -278,6 +278,10 @@ body{
   flex: 1;
 
   padding: 50px;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
 }
 
 .main-content h1{
@@ -373,52 +377,6 @@ body{
 
   cursor: pointer;
 }
-
-/* DASHBOARD */
-.dashboard-home{
-  display: grid;
-
-  grid-template-columns:
-  repeat(auto-fit, minmax(320px, 1fr));
-
-  gap: 25px;
-}
-
-.home-card{
-  background: white;
-
-  padding: 35px;
-
-  border-radius: 28px;
-
-  box-shadow:
-  0 10px 30px rgba(0,0,0,0.05);
-
-  border:
-  1px solid #e2e8f0;
-}
-
-.home-card span{
-  color: #8b5cf6;
-
-  font-weight: 600;
-
-  font-size: 14px;
-}
-
-.home-card h2{
-  margin-top: 14px;
-  margin-bottom: 18px;
-
-  font-size: 28px;
-}
-
-.home-card p{
-  color: #64748b;
-
-  line-height: 1.7;
-}
-
 
 
 /*DARK MODE*/
@@ -642,4 +600,460 @@ body{
   background: #dbeafe;
 
   color: #0f172a;
+}
+
+.modules-list{
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.module-item{
+  border-bottom:
+  1px solid #e2e8f0;
+
+  padding: 20px 0;
+}
+
+.module-title{
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.module-title h3{
+  margin-top: 6px;
+
+  font-size: 24px;
+}
+
+.module-title span{
+  color: #8b5cf6;
+
+  font-weight: 600;
+}
+
+.module-content{
+  margin-top: 20px;
+
+  padding-left: 8px;
+}
+
+.module-content p{
+  color: #64748b;
+
+  margin-bottom: 16px;
+
+  line-height: 1.7;
+}
+
+.module-content button{
+  border: none;
+
+  background: #eef2ff;
+
+  color: #4338ca;
+
+  padding: 12px 18px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.module-content button:hover{
+  background: #dbeafe;
+}
+
+.project-icon{
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  background:
+  linear-gradient(
+    135deg,
+    #0ea5e9,
+    #2563eb
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  margin: 0 auto 24px auto;
+
+  box-shadow:
+  0 10px 30px rgba(37,99,235,0.25);
+}
+
+
+.project-page{
+  min-height: 100vh;
+
+  background: #f8fafc;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 60px 20px;
+}
+
+.project-icon{
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  background:
+  linear-gradient(
+    135deg,
+    #0ea5e9,
+    #2563eb
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  margin-bottom: 24px;
+
+  box-shadow:
+  0 10px 30px rgba(37,99,235,0.25);
+}
+
+.project-page h1{
+  font-size: 42px;
+
+  margin-bottom: 14px;
+}
+
+.project-page p{
+  color: #64748b;
+
+  font-size: 18px;
+
+  max-width: 600px;
+
+  line-height: 1.7;
+}
+.project-container{
+  width: 100%;
+
+  max-width: 650px;
+
+  background: white;
+
+  padding: 60px 40px;
+
+  border-radius: 24px;
+
+  border:
+  1px solid #e2e8f0;
+
+  box-shadow:
+  0 10px 40px rgba(0,0,0,0.05);
+}
+
+
+.project-info{
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.project-box{
+  display: flex;
+  align-items: center;
+
+  gap: 22px;
+
+  padding: 28px;
+
+  border-radius: 22px;
+
+  border:
+  1px solid #dbeafe;
+
+  background: #ffffff;
+}
+
+.project-box-icon{
+  min-width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #3b82f6
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+
+  color: white;
+}
+
+.project-box-icon.cyan{
+  background:
+  linear-gradient(
+    135deg,
+    #06b6d4,
+    #0ea5e9
+  );
+}
+
+.project-box-icon.purple{
+  background:
+  linear-gradient(
+    135deg,
+    #7c3aed,
+    #8b5cf6
+  );
+}
+
+.project-box h3{
+  font-size: 24px;
+
+  margin-bottom: 8px;
+
+  color: #1e3a8a;
+}
+
+.project-box p{
+  color: #2563eb;
+
+  margin-bottom: 6px;
+}
+
+.project-box span{
+  color: #64748b;
+
+  font-size: 15px;
+}
+
+.motivation-box{
+  margin-top: 40px;
+
+  background: #f0f9ff;
+
+  padding: 36px;
+
+  border-radius: 24px;
+
+  text-align: left;
+}
+
+.motivation-box h2{
+  margin-bottom: 20px;
+
+  color: #1e3a8a;
+
+  font-size: 28px;
+}
+
+.motivation-box p{
+  color: #475569;
+
+  line-height: 1.9;
+
+  font-size: 16px;
+}
+
+.thanks-box{
+  margin-top: 30px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+  );
+
+  color: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  text-align: center;
+}
+
+.thanks-box h3{
+  margin-bottom: 10px;
+
+  font-size: 24px;
+}
+
+.thanks-box p{
+  opacity: 0.9;
+ color: white;
+
+  line-height: 1.7;
+}
+
+.dark{
+  background: #0f172a;
+}
+
+.dark .project-container{
+  background: #111827;
+
+  border:
+  1px solid #1e293b;
+}
+
+.dark h1{
+  color: white;
+}
+
+.dark .project-page p{
+  color: #94a3b8;
+}
+
+.dark .project-box{
+  background: #0f172a;
+
+  border:
+  1px solid #1e293b;
+}
+
+.dark .project-box h3{
+  color: white;
+}
+
+.dark .project-box p{
+  color: #60a5fa;
+}
+
+.dark .project-box span{
+  color: #94a3b8;
+}
+
+.dark .motivation-box{
+  background: #0f172a;
+}
+
+.dark .motivation-box h2{
+  color: white;
+}
+
+.dark .motivation-box p{
+  color: #94a3b8;
+}
+
+.project-header{
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+.back-button{
+  border: none;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  padding: 12px 18px;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  margin-bottom: 40px;
+
+  transition: 0.3s;
+}
+
+.back-button:hover{
+  background: #dbeafe;
+}
+
+
+.back-button{
+  border: none;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  padding: 12px 18px;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  margin-bottom: 30px;
+
+  transition: 0.3s;
+}
+
+.back-button:hover{
+  background: #dbeafe;
+}
+
+/*MOBILE*/
+@media (max-width: 768px){
+.main-content{
+  padding: 30px 20px;
+}
+
+.project-container{
+  padding: 40px 24px;
+}
+
+.project-page h1{
+  font-size: 32px;
+}
+
+.module-title h3{
+  font-size: 20px;
+}
 }
